@@ -1,10 +1,11 @@
 import TodoListItem from "./todo-list-item";
 
-const TodoList = () => {
+const TodoList = (props) => {
   return(
-    <ul> {
-      <li><TodoListItem /></li>
-      }</ul>
+    <ul>
+      <li><TodoListItem label="Create Awesome App"/></li>
+      <li><TodoListItem label="Drink Dr. Pepper" important/></li>
+      </ul>
   );
 };
 
